@@ -1,11 +1,15 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import { Dashboard, Login, PrivateRoute, AuthWrapper, Error } from './pages';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-export default function App() {
+function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Dashboard></Dashboard>
+      <Login />
+      <Error />
     </div>
   );
 }
+
+export default App;
